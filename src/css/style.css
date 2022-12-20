@@ -98,3 +98,17 @@
 .footer span {
   color: #d040b0;
 }
+.about-block1 {
+  text-align: center;
+  margin: 3.5vh 19vw 3vh 20vw;
+}
+.about-block1 h1 {
+  font-weight: bold;
+  color: #e91e71;
+}
+.about-block1 p {
+  margin-top: 20px;
+}
+.about-block1 span {
+  color: #d040b0;
+}
