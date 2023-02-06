@@ -16,7 +16,7 @@ export default function NavBar() {
             <NavLink to="/list">List</NavLink>
           </li>
           <li className="nav-end-two">
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/about">About us</NavLink>
           </li>
         </ul>
       </div>

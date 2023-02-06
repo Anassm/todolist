@@ -7,6 +7,7 @@
 .navigations ul {
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 .nav-end-two {
   font-size: 1.1rem;
@@ -111,4 +112,43 @@
 }
 .about-block1 span {
   color: #d040b0;
+}
+.list-button {
+  margin-top: 10vh;
+  font-size: 1.6rem;
+  border: 2px solid #e91e71;
+  padding: 4px 60px 5px 60px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+.contact-wrapper {
+  margin: 7vh 19vw 3vh 20vw;
+}
+.contact-block1 {
+  
+}
+.contact-block2 {
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  align-items: center;
+  grid-template-rows: auto;
+  justify-content: center;
+  gap: 1rem;
+}
+.contact-lable1,
+.contact-lable2,
+.contact-lable3,
+.contact-lable4 {
+  display: flex;
+  background: linear-gradient(to left, #d040b0, #e91e71);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.contact-lable1 svg,
+.contact-lable2 svg,
+.contact-lable3 svg,
+.contact-lable4 svg {
+  height: auto;
+  width: 2rem;
+  margin-right: 2%;
 }

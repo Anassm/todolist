@@ -3,7 +3,11 @@ import "../css/style.css";
 export default function AboutPage() {
   return (
     <>
-      <h1>About our to do list</h1>
+      <center>
+        <h1>This page is in Construction 🛠️🚧</h1>
+        <br></br>
+        <h4 style={{ fontStyle: "italic" }}>niet</h4>
+      </center>
     </>
   );
 }
