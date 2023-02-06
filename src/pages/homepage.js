@@ -21,17 +21,15 @@ export default function HomePage() {
             To-Do List today and make sure you never miss another deadline!
           </p>
         </div>
-        <div>
-          <Player
-            src="https://assets9.lottiefiles.com/packages/lf20_jy1bgnpp.json"
-            className="player"
-            background="transparent"
-            speed="0.5"
-            loop
-            controls
-            autoplay
-          ></Player>
-        </div>
+        <Player
+          src="https://assets9.lottiefiles.com/packages/lf20_jy1bgnpp.json"
+          className="player"
+          background="transparent"
+          speed="0.5"
+          loop
+          controls
+          autoplay
+        ></Player>
       </div>
       <div className="home-block2">
         <span>Completely free</span>

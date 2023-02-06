@@ -125,30 +125,133 @@
   margin: 7vh 19vw 3vh 20vw;
 }
 .contact-block1 {
-  
-}
-.contact-block2 {
-  display: grid;
-  grid-template-columns: 24% 24% 24% 24%;
-  align-items: center;
-  grid-template-rows: auto;
-  justify-content: center;
-  gap: 1rem;
-}
-.contact-lable1,
-.contact-lable2,
-.contact-lable3,
-.contact-lable4 {
   display: flex;
-  background: linear-gradient(to left, #d040b0, #e91e71);
+  flex-direction: column;
+  align-items: center;
+}
+.contact-block1 form {
+  width: 50%;
+}
+.contact-block1 p {
+  margin-bottom: 6px;
+}
+.contact-email-block1,
+.contact-subject-block1 {
+  display: inline-block;
+  width: 49%;
+}
+.contact-subject-block1 {
+  margin-left: 0.7rem;
+}
+.contact-block1 input {
+  width: 100%;
+  padding: 1em 1em;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  border: 1px solid #161616;
+  background: #242424;
+  margin-bottom: 1.5vh;
+  color: #fff;
+}
+.contact-block1 textarea {
+  width: 100%;
+  padding: 1em 1em;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid #161616;
+  background: #242424;
+  resize: none;
+  color: #fff;
+  z-index: 100;
+}
+.contact-block1 button {
+  display: block;
+  margin-top: 1rem;
+  padding: 1vh 2vw 1vh 2vw;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background: #d040b0;
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-block1 h1 {
+  margin-bottom: 4vh;
+  color: #e91e71;
+  font-size: 2.4rem;
+}
+.contact-lables {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+}
+.contact-block2 h1 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #242424;
+  line-height: 0.2em;
+  margin: 9vh 0 4vh;
+}
+.contact-block2 span {
+  font-size: 1.8rem;
+  background: #1b1b1b;
+  padding: 0 10px;
+}
+.contact-lable {
+  display: flex;
+  background: linear-gradient(200deg, #d040b0, #e91e71);
   border-radius: 0.5rem;
   padding: 1rem;
 }
-.contact-lable1 svg,
-.contact-lable2 svg,
-.contact-lable3 svg,
-.contact-lable4 svg {
+.contact-lable svg {
   height: auto;
   width: 2rem;
   margin-right: 2%;
+}
+.contact-lables:hover a {
+  opacity: 0.5;
+}
+.contact-lables a:hover {
+  opacity: 1;
+}
+@media only screen and (max-width: 600px) {
+  .contact-wrapper {
+    margin: 7% 8% 7% 8%;
+  }
+  .contact-subject-block1 {
+    margin-left: 0;
+  }
+  .contact-block1 form {
+    width: 100%;
+  }
+  .contact-email-block1,
+  .contact-subject-block1 {
+    display: inline-block;
+    width: 100%;
+  }
+  .contact-block1 button {
+    margin-top: 1.3rem;
+  }
+  .footer {
+    margin: 0 0 -100px 0;
+  }
+  .contact-block1 button {
+    padding: 1.2vh 4vw 1.2vh 4vw;
+  }
+  .home-block1 {
+    margin: 7% 8% 7% 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+  }
+  .home-block2 {
+    margin: 7% 8% 7% 8%;
+    align-items: flex-start;
+  }
+  .home-block2 p {
+    text-align: start;
+  }
 }
