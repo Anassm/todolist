@@ -1,9 +1,31 @@
 import "../css/style.css";
 import { Player } from "@lottiefiles/react-lottie-player";
+import { Link } from "react-router-dom";
 
 export default function AboutPage() {
   return (
     <div className="about-wrapper">
+      <div className="about-block1">
+        <span>About us</span>
+        <h1>Who are we?</h1>
+        <p>
+          Our To-Do List website is designed to help people manage their tasks
+          and responsibilities in an organized and efficient manner. With its
+          intuitive interface and powerful features, our platform makes it easy
+          for users to stay on top of their to-do list, no matter how busy their
+          schedule may be.
+          <br />
+          <br />
+          Our website was created with the goal of simplifying task management
+          for individuals and teams. Whether you're a student, professional, or
+          just someone looking to stay organized, our to-do list platform offers
+          the tools and features you need to get the job done. You can create
+          task lists, set due dates, and add notes to help you stay on track.
+          You can also share your lists with friends, family, or coworkers to
+          collaborate on projects and keep everyone up-to-date on progress.
+        </p>
+        <Link to="/contact">Questions?</Link>
+      </div>
       <div className="about-block2">
         <div className="about-grid-block2">
           <div className="about-accomplishments-block2">
@@ -32,17 +54,15 @@ export default function AboutPage() {
               See more projects →
             </a>
           </div>
-          <div>
-            <Player
-              src="https://assets3.lottiefiles.com/packages/lf20_akyUFY9GQo.json"
-              className="player2"
-              background="transparent"
-              speed="0.5"
-              loop
-              controls
-              autoplay
-            ></Player>
-          </div>
+          <Player
+            src="https://assets3.lottiefiles.com/packages/lf20_akyUFY9GQo.json"
+            className="player2"
+            background="transparent"
+            speed="0.5"
+            loop
+            controls
+            autoplay
+          ></Player>
         </div>
       </div>
     </div>

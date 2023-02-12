@@ -12,9 +12,9 @@ export default function NavBar() {
               <img src={logo} alt="Home" />
             </Link>
           </li>
-          <li className="nav-end-two">
+          {/* <li className="nav-end-two">
             <NavLink to="/list">List</NavLink>
-          </li>
+          </li> */}
           <li className="nav-end-two">
             <NavLink to="/about">About us</NavLink>
           </li>
