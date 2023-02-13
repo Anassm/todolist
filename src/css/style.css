@@ -277,6 +277,9 @@
   width: 53%;
   padding-top: 2vh;
 }
+.side-draw {
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
   .contact-wrapper {
@@ -335,5 +338,8 @@
     padding-top: 4vh;
     padding-bottom: 2.6vh;
     width: 63%;
+  }
+  .navbar a:not(.nohide) {
+    display: none;
   }
 }

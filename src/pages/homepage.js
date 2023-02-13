@@ -22,11 +22,11 @@ export default function HomePage() {
           </p>
         </div>
         <Player
-          src="https://assets9.lottiefiles.com/packages/lf20_jy1bgnpp.json"
+          src="https://assets10.lottiefiles.com/packages/lf20_cJasAB9Hi0.json"
           className="player"
           background="transparent"
           speed="0.5"
-          loop
+          keepLastFrame="true"
           controls
           autoplay
         ></Player>
@@ -43,7 +43,7 @@ export default function HomePage() {
           easy to stay on top of your work. Give our to-do list a try today and
           see how it can help you stay organized and productive!
         </p>
-        <Link to="/list">Try it out! →</Link>
+        <Link to="/about">Read about us! →</Link>
       </div>
     </>
   );
