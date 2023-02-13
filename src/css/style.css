@@ -12,7 +12,8 @@
 .nav-end-two {
   font-size: 1.1rem;
 }
-.navigations img {
+.navigations img,
+.logo-icon {
   height: auto;
   width: 12em;
 }
@@ -280,6 +281,9 @@
 .side-draw {
   display: none;
 }
+.logo-icon {
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
   .contact-wrapper {
@@ -339,7 +343,29 @@
     padding-bottom: 2.6vh;
     width: 63%;
   }
-  .navbar a:not(.nohide) {
+  .navbar a {
     display: none;
+  }
+  .navbar,
+  .side-draw {
+    
+  }  
+
+  .navbar,
+  .responsive {
+    position: relative;
+  }
+  .navbar,
+  .responsive a,
+  .side-draw {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar,
+  .responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
