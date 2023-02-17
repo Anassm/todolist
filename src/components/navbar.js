@@ -10,6 +10,7 @@ export default function NavBar() {
 
   const handleClick = (event) => {
     setIsActive((current) => !current);
+    console.log(isActive)
   };
 
   return (

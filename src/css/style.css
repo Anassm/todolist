@@ -348,7 +348,8 @@
   }
   .navbar,
   .side-draw {
-    
+    float: right;
+    display: block;
   }  
 
   .navbar,
