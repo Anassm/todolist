@@ -342,31 +342,5 @@
     padding-top: 4vh;
     padding-bottom: 2.6vh;
     width: 63%;
-  }
-  .navbar a {
-    display: none;
-  }
-  .navbar,
-  .side-draw {
-    float: right;
-    display: block;
-  }  
-
-  .navbar,
-  .responsive {
-    position: relative;
-  }
-  .navbar,
-  .responsive a,
-  .side-draw {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar,
-  .responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+  } 
 }

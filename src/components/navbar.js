@@ -8,17 +8,12 @@ import { useState } from "react";
 export default function NavBar() {
   const [isActive, setIsActive] = useState(false);
 
-  const handleClick = (event) => {
-    setIsActive((current) => !current);
-    console.log(isActive)
-  };
-
   return (
     <div className="navbar">
       <Link className="logo-icon" to="/">
         <img src={logoSmall} alt="Home" />
       </Link>
-      <div className="navigations">
+      <div className={isActive ? "responsive" : "navigations"}>
         <ul>
           <li>
             <Link to="/">
@@ -37,8 +32,10 @@ export default function NavBar() {
         <Link to="/contact">Contact us!</Link>
       </div>
       <HiMenu
-        onClick={handleClick}
-        className={`side-draw ${isActive ? "responsive" : " "}`}
+        onClick={() => {
+          setIsActive(!isActive);
+        }}
+        className="side-draw"
       />
     </div>
   );
