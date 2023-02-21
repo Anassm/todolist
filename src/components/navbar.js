@@ -1,19 +1,21 @@
 import { Link, NavLink } from "react-router-dom";
 import "../css/style.css";
 import logo from "../images/todo.png";
-import logoSmall from "../images/todo.png";
 import { HiMenu } from "react-icons/hi";
 import { useState } from "react";
 
 export default function NavBar() {
   const [isActive, setIsActive] = useState(false);
 
+  const isActiveHandler = () => {
+    setIsActive((current) => !current);
+  };
+
+  console.log(isActive);
+
   return (
     <div className="navbar">
-      <Link className="logo-icon" to="/">
-        <img src={logoSmall} alt="Home" />
-      </Link>
-      <div className={isActive ? "responsive" : "navigations"}>
+      <div className="navigations">
         <ul>
           <li>
             <Link to="/">
@@ -27,16 +29,23 @@ export default function NavBar() {
             <NavLink to="/about">About</NavLink>
           </li>
         </ul>
+        <HiMenu onClick={isActiveHandler} className="side-draw" />
       </div>
       <div className="nav-contact">
         <Link to="/contact">Contact us!</Link>
       </div>
-      <HiMenu
-        onClick={() => {
-          setIsActive(!isActive);
-        }}
-        className="side-draw"
-      />
+      <div className={isActive ? "responsive" : "hide"}>
+        <ul>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact" className="nav-contact-responsive">
+              Contact us!
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

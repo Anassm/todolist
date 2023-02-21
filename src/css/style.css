@@ -4,6 +4,7 @@
   justify-content: space-around;
   border-bottom: 2px solid #242424;
 }
+.responsive ul,
 .navigations ul {
   display: flex;
   align-items: center;
@@ -12,11 +13,13 @@
 .nav-end-two {
   font-size: 1.1rem;
 }
+.responsive img,
 .navigations img,
 .logo-icon {
   height: auto;
   width: 12em;
 }
+.responsive li,
 .navigations li {
   padding: 12px;
 }
@@ -284,7 +287,9 @@
 .logo-icon {
   display: none;
 }
-
+.hide {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   .contact-wrapper {
     margin: 7% 8% 7% 8%;
@@ -342,5 +347,50 @@
     padding-top: 4vh;
     padding-bottom: 2.6vh;
     width: 63%;
-  } 
+  }
+  .nav-end-two {
+    display: none;
+  }
+  .nav-contact {
+    display: none;
+  }
+  .navbar {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(28, 28, 28, 0.55);
+    backdrop-filter: blur(5px);
+  }
+  .navigations {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .side-draw {
+    display: block;
+    height: auto;
+    width: 40px;
+    margin-right: 8%;
+  }
+  .responsive {
+    padding: 0.7rem;
+    width: 100%;
+    background: linear-gradient(
+      45deg,
+      rgba(233, 30, 113, 0.50) 0%,
+      rgba(208, 64, 176, 0.50) 100%
+    );
+    backdrop-filter: blur(5px);
+  }
+  .responsive ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-contact-responsive {
+    border: 1px solid #fff;
+    padding: 7px 30px 7px 30px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+  }
 }
