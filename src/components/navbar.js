@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import "../css/style.css";
 import logo from "../images/todo.png";
-import { HiMenu } from "react-icons/hi";
+import { HiMenu, HiX } from "react-icons/hi";
 import { useState } from "react";
 
 export default function NavBar() {
@@ -10,6 +10,8 @@ export default function NavBar() {
   const isActiveHandler = () => {
     setIsActive((current) => !current);
   };
+
+  const ToggleIcon = isActive ? HiX : HiMenu;
 
   console.log(isActive);
 
@@ -29,8 +31,9 @@ export default function NavBar() {
             <NavLink to="/about">About</NavLink>
           </li>
         </ul>
-        <HiMenu onClick={isActiveHandler} className="side-draw" />
+        <ToggleIcon onClick={isActiveHandler} className="side-draw" />
       </div>
+
       <div className="nav-contact">
         <Link to="/contact">Contact us!</Link>
       </div>
