@@ -13,15 +13,13 @@ export default function NavBar() {
 
   const ToggleIcon = isActive ? HiX : HiMenu;
 
-  console.log(isActive);
-
   return (
     <div className="navbar">
       <div className="navigations">
         <ul>
           <li>
             <Link to="/">
-              <img src={logo} alt="Home" />
+              <img src={logo} alt="Home" width="" height="" />
             </Link>
           </li>
           {/* <li className="nav-end-two">

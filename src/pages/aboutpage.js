@@ -31,9 +31,9 @@ export default function AboutPage() {
           <div className="about-accomplishments-block2">
             <h2>Our accomplishments</h2>
             <p>
-              TO DO has become a leader in its field, earning many awards for
-              its innovative products and excellent customer service. Check out
-              more of our projects:
+              TO DO has become a leader in its field, earning many <br /> awards
+              for its innovative products and excellent customer service. Check
+              out more of our projects:
             </p>
             <ul>
               <li>
@@ -60,7 +60,6 @@ export default function AboutPage() {
             background="transparent"
             speed="0.5"
             loop
-            controls
             autoplay
           ></Player>
         </div>

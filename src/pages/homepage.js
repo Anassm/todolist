@@ -24,10 +24,8 @@ export default function HomePage() {
         <Player
           src="https://assets10.lottiefiles.com/packages/lf20_cJasAB9Hi0.json"
           className="player"
-          background="transparent"
           speed="0.5"
           keepLastFrame="true"
-          controls
           autoplay
         ></Player>
       </div>
