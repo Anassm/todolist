@@ -1,4 +1,4 @@
-# TODO-list website made by <a href="https://github.com/Anassm">Anass Moussadi</a>
+# TODO-list website made by <a href="https://github.com/Anassm">Anass Moussadi</a> with React-JS
 
 ## About this project 
 <p>
@@ -13,12 +13,21 @@
 ## Getting Started
 To get started, you can clone this repository to your local machine using the following command:
 
-``git clone https://github.com/Anassm/todolist.git`` <br>
+```bash
+git clone https://github.com/Anassm/todolist.git
+```
 
 *Alternatively, you can download the ZIP file and extract it to your preferred directory.*
 
 ## Usage
-Open the index.html file in your web browser to view the website.
+First, run the development server:
+
+```bash
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
 
 ## Contributing
 This project is open to contributions. If you find any bugs or have any suggestions, feel free to create an issue or submit a pull request.<br>
