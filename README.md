@@ -1,4 +1,4 @@
-# TODO-list website made by <a href="https://github.com/Anassm">Anass Moussadi</a> with React-JS
+# Website made by <a href="https://github.com/Anassm">Anass Moussadi</a> with React-JS
 
 ## About this project 
 <p>
