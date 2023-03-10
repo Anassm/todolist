@@ -7,7 +7,7 @@
 </p>
 
 <ul>
-  <li><b>Design</b> - Pages look blanq, filling empty space with elements like design patters makes it look more appealing to people.</li>
+  <li><b>Design</b> - Pages look blanq, filling empty space with elements like design patterns makes it look more appealing to people.</li>
 </ul>
 
 ## Getting Started
