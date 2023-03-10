@@ -19,7 +19,7 @@ export default function NavBar() {
         <ul>
           <li>
             <Link to="/">
-              <img src={logo} alt="Home" width="" height="" />
+              <img src={logo} alt="Home" width="100%" height="100%" />
             </Link>
           </li>
           {/* <li className="nav-end-two">
@@ -38,10 +38,16 @@ export default function NavBar() {
       <div className={isActive ? "responsive" : "hide"}>
         <ul>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" onClick={isActiveHandler}>
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/contact" className="nav-contact-responsive">
+            <Link
+              to="/contact"
+              onClick={isActiveHandler}
+              className="nav-contact-responsive"
+            >
               Contact us!
             </Link>
           </li>
