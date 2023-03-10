@@ -2,7 +2,7 @@
 
 ## About this project 
 <p>
-  I have made this website wanting to test my general skills, it does not have any appealing functionalities nor reusable code. Wanted to focus on design. <br>
+  I have made this website wanting to test my general skills, focus wasn't on reusable code.<br>
   Areas of improvement:
 </p>
 
