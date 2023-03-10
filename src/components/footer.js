@@ -6,7 +6,7 @@ export default function Footer() {
       <footer>
         <p>
           Copyright © {new Date().getFullYear()}{" "}
-          <a href="https://anassm.com">
+          <a href="#">
             <span>Anass Moussadi</span>
           </a>
         </p>

@@ -37,7 +37,7 @@ export default function AboutPage() {
             </p>
             <ul>
               <li>
-                A portfolio website - <a href="https://anassm.com">Anassm</a>
+                A portfolio website - <a href="#">Anass</a>
               </li>
               <li>
                 An astronomy website - <a href="#">Stargaze</a>
@@ -49,7 +49,7 @@ export default function AboutPage() {
             </ul>
             <a
               className="about-btn-block2"
-              href="https://anassm.com/my-projects"
+              href="https://github.com/Anassm/Portfolio"
             >
               See more projects →
             </a>
